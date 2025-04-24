@@ -4,10 +4,10 @@
   <!-- ✦✦✦ BASIC SEO ✦✦✦ -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Image Converter Pro – Free JPG ⇄ PNG ⇄ WebP Optimizer</title>
+  <title>Image Converter Pro – Free JPG ⇄ PNG ⇄ WebP Optimizer</title>
   <meta name="description" content="Convert and compress images between JPG, PNG & WebP formats in‑browser. Control quality, preview savings, 100 % private & free.">
   <meta name="keywords" content="image converter, jpg to png, png to webp, webp to jpg, image optimizer, compress images online">
-  <meta name="author" content="Image Converter Pro">
+  <meta name="author" content="Image Converter Pro">
 
   <!-- ✦✦✦ OPEN GRAPH / TWITTER ✦✦✦ -->
   <meta property="og:title" content="Free Online Image Converter & Optimizer">
@@ -29,67 +29,78 @@
   {
     "@context":"https://schema.org",
     "@type":"WebApplication",
-    "name":"Image Converter Pro",
+    "name":"Image Converter Pro",
     "applicationCategory":"UtilityApplication",
     "operatingSystem":"All",
     "url":"https://yourdomain.com/image-converter",
     "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
-    "creator":{"@type":"Organization","name":"Image Converter Pro"}
+    "creator":{"@type":"Organization","name":"Image Converter Pro"}
   }
   </script>
 
   <!-- ✦✦✦ GOOGLE ADSENSE (GLOBAL) ✦✦✦ -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
 
   <!-- ✦✦✦ GOOGLE FONTS + ICONS ✦✦✦ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xh6u…" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- ✦✦✦ CORE STYLES ✦✦✦ -->
   <style>
   :root{
-    --primary:#4361ee;--primary-dark:#3a0ca3;
-    --gray:#6b7280;--light:#f8f9fa;--dark:#111827;
-    --radius:12px;--shadow:0 6px 18px rgba(0,0,0,.05);
+    --primary:#4361ee; --primary-dark:#3a0ca3;
+    --gray:#6b7280; --light:#f8f9fa; --dark:#111827;
+    --radius:12px; --shadow:0 6px 18px rgba(0,0,0,.05);
     --transition:.2s ease-in-out;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font:16px/1.6 'Inter',sans-serif;color:var(--dark);background:var(--light)}
-  a{text-decoration:none;color:inherit}
-  header{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06);position:sticky;top:0;z-index:10}
-  .nav{max-width:1200px;margin:auto;padding:1rem 1.25rem;display:flex;justify-content:space-between;align-items:center}
-  .logo{display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:1.25rem;color:var(--primary)}
-  .menu{display:flex;gap:1.5rem;font-weight:500}
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font:16px/1.6 'Inter',sans-serif; color:var(--dark); background:var(--light)}
+  a{text-decoration:none; color:inherit}
+  header{background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.06); position:sticky; top:0; z-index:10}
+  .nav{max-width:1200px; margin:auto; padding:1rem 1.25rem; display:flex; justify-content:space-between; align-items:center}
+  .logo{display:flex; align-items:center; gap:.6rem; font-weight:700; font-size:1.25rem; color:var(--primary)}
+  .menu{display:flex; gap:1.5rem; font-weight:500}
   .menu a:hover{color:var(--primary-dark)}
-  .container{max-width:1200px;margin:auto;padding:0 1.25rem}
-  .tool{background:#fff;margin:2.5rem auto;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
-  h1{font-size:1.8rem;margin-bottom:.5rem;text-align:center}
-  .upload{border:2px dashed var(--primary);padding:2.5rem 1rem;text-align:center;border-radius:var(--radius);cursor:pointer;transition:var(--transition);background:rgba(67,97,238,.03)}
+  .container{max-width:1200px; margin:auto; padding:0 1.25rem}
+  .tool{background:#fff; margin:2.5rem auto; padding:2rem; border-radius:var(--radius); box-shadow:var(--shadow)}
+  h1{font-size:1.8rem; margin-bottom:.5rem; text-align:center}
+  .upload{border:2px dashed var(--primary); padding:2.5rem 1rem; text-align:center; border-radius:var(--radius); cursor:pointer; transition:var(--transition); background:rgba(67,97,238,.03)}
   .upload:hover{background:rgba(67,97,238,.05)}
-  .upload i{font-size:3rem;color:var(--primary);margin-bottom:.6rem}
+  .upload i{font-size:3rem; color:var(--primary); margin-bottom:.6rem}
   #fileInput{display:none}
-  .controls{margin-top:2rem;display:grid;gap:1.5rem}
-  .quality{display:flex;align-items:center;gap:1rem}
-  .quality input{flex:1}
-  .format{display:flex;gap:.75rem;flex-wrap:wrap}
-  .format button{padding:.6rem 1.25rem;border:1px solid #d1d5db;border-radius:var(--radius);background:#fff;font-weight:500;cursor:pointer;transition:var(--transition)}
-  .format button.active,.format button:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
-  .btn{padding:.75rem 1.5rem;border:none;border-radius:var(--radius);font-weight:600;cursor:pointer;transition:var(--transition);display:inline-flex;align-items:center;gap:.5rem}
-  .btn-primary{background:var(--primary);color:#fff}
-  .btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
-  .results{display:none;margin-top:2.5rem}
-  .grid{display:grid;gap:2rem}
-  .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-  .card-header{padding:.75rem 1rem;font-weight:600;border-bottom:1px solid #e5e7eb}
-  .card-body{padding:1rem;text-align:center;background:var(--light)}
-  .card-body img{max-width:100%;max-height:260px;object-fit:contain}
-  .info{padding:1rem;border-top:1px solid #e5e7eb;font-size:.9rem}
-  .info div{display:flex;justify-content:space-between;margin:.3rem 0}
-  .success{color:#16a34a;font-weight:600}
-  .ads{margin:2rem auto;text-align:center}
-  /* ——— responsive ——— */
+  .controls{margin-top:2rem; display:grid; gap:1.5rem}
+  .quality{display:flex; align-items:center; gap:1rem}
+  .quality input{flex:1; -webkit-appearance:none; height:6px; background:#e5e7eb; border-radius:3px; outline:none}
+  .quality input::-webkit-slider-thumb{-webkit-appearance:none; width:18px; height:18px; background:var(--primary); border-radius:50%; cursor:pointer}
+  .format{display:flex; gap:.75rem; flex-wrap:wrap}
+  .format button{padding:.6rem 1.25rem; border:1px solid #d1d5db; border-radius:var(--radius); background:#fff; font-weight:500; cursor:pointer; transition:var(--transition)}
+  .format button.active, .format button:hover{background:var(--primary); color:#fff; border-color:var(--primary)}
+  .btn{padding:.75rem 1.5rem; border:none; border-radius:var(--radius); font-weight:600; cursor:pointer; transition:var(--transition); display:inline-flex; align-items:center; gap:.5rem}
+  .btn-primary{background:var(--primary); color:#fff}
+  .btn-primary:hover{background:var(--primary-dark); transform:translateY(-2px)}
+  .btn-primary:disabled{background:#9ca3af; cursor:not-allowed; transform:none}
+  .results{display:none; margin-top:2.5rem}
+  .grid{display:grid; gap:2rem}
+  .card{background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden}
+  .card-header{padding:.75rem 1rem; font-weight:600; border-bottom:1px solid #e5e7eb}
+  .card-body{padding:1rem; text-align:center; background:var(--light)}
+  .card-body img{max-width:100%; max-height:260px; object-fit:contain}
+  .info{padding:1rem; border-top:1px solid #e5e7eb; font-size:.9rem}
+  .info div{display:flex; justify-content:space-between; margin:.3rem 0}
+  .success{color:#16a34a; font-weight:600}
+  .ads{margin:2rem auto; text-align:center; background:#fff; padding:1rem; border-radius:var(--radius)}
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    body{background:#111827; color:#f3f4f6}
+    header, .tool, .card{background:#1f2937}
+    .upload{background:rgba(67,97,238,.1)}
+    .card-body{background:#111827}
+    .format button{background:#374151; border-color:#4b5563}
+    .quality input{background:#4b5563}
+  }
+  /* Responsive */
   @media(max-width:768px){.grid{grid-template-columns:1fr}}
   @media(min-width:769px){.grid{grid-template-columns:repeat(2,1fr)}}
   </style>
@@ -97,7 +108,7 @@
 <body>
 <header>
   <nav class="nav">
-    <a class="logo" href="#"><i class="fas fa-exchange-alt"></i>ImageConverter</a>
+    <a class="logo" href="#"><i class="fas fa-exchange-alt"></i> ImageConverter</a>
     <div class="menu">
       <a href="#">Home</a><a href="#">Image Tools</a><a href="#">Contact</a>
     </div>
@@ -106,8 +117,12 @@
 
 <!-- ✦✦✦ TOP AD ✦✦✦ -->
 <div class="ads">
-  <!-- Replace YOUR_TOP_SLOT with your ad‑unit‑id -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="YOUR_TOP_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <ins class="adsbygoogle" 
+       style="display:block" 
+       data-ad-client="ca-pub-YOUR_PUBLISHER_ID" 
+       data-ad-slot="YOUR_TOP_SLOT" 
+       data-ad-format="auto" 
+       data-full-width-responsive="true"></ins>
 </div>
 
 <main class="container">
@@ -138,7 +153,7 @@
         </div>
       </div>
 
-      <button id="convertBtn" class="btn btn-primary" disabled><i class="fas fa-exchange-alt"></i>Convert</button>
+      <button id="convertBtn" class="btn btn-primary" disabled><i class="fas fa-exchange-alt"></i> Convert</button>
     </div>
 
     <!-- ✦✦✦ SPINNER ✦✦✦ -->
@@ -152,7 +167,7 @@
       <div class="grid">
         <div class="card">
           <div class="card-header">Original</div>
-          <div class="card-body"><img id="origImg" alt=""></div>
+          <div class="card-body"><img id="origImg" alt="Original image"></div>
           <div class="info">
             <div><span>Format:</span><span id="origFmt"></span></div>
             <div><span>Size:</span><span id="origSize"></span></div>
@@ -161,7 +176,7 @@
         </div>
         <div class="card">
           <div class="card-header">Converted</div>
-          <div class="card-body"><img id="convImg" alt=""></div>
+          <div class="card-body"><img id="convImg" alt="Converted image"></div>
           <div class="info">
             <div><span>Format:</span><span id="convFmt"></span></div>
             <div><span>Size:</span><span id="convSize"></span></div>
@@ -171,8 +186,8 @@
         </div>
       </div>
       <div style="text-align:center;margin-top:1.75rem">
-        <a id="downloadBtn" class="btn btn-primary" download="converted.webp"><i class="fas fa-download"></i>Download</a>
-        <button id="resetBtn" class="btn" style="margin-left:.5rem"><i class="fas fa-redo"></i>Convert another</button>
+        <a id="downloadBtn" class="btn btn-primary" download="converted.webp"><i class="fas fa-download"></i> Download</a>
+        <button id="resetBtn" class="btn" style="margin-left:.5rem"><i class="fas fa-redo"></i> Convert another</button>
       </div>
     </div>
   </section>
@@ -180,107 +195,183 @@
 
 <!-- ✦✦✦ BOTTOM AD ✦✦✦ -->
 <div class="ads">
-  <!-- Replace YOUR_BOTTOM_SLOT with your ad‑unit‑id -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="YOUR_BOTTOM_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <ins class="adsbygoogle" 
+       style="display:block" 
+       data-ad-client="ca-pub-YOUR_PUBLISHER_ID" 
+       data-ad-slot="YOUR_BOTTOM_SLOT" 
+       data-ad-format="auto" 
+       data-full-width-responsive="true"></ins>
 </div>
 
 <footer style="background:#111827;color:#9ca3af;padding:2.5rem 0;margin-top:3rem">
   <div class="container" style="text-align:center">
-    <p>© <span id="yr"></span> Image Converter Pro · All rights reserved.</p>
+    <p>© <span id="yr"></span> Image Converter Pro · All rights reserved.</p>
+    <div style="margin-top:1rem;font-size:.9rem">
+      <a href="#" style="color:inherit;margin:0 .5rem">Privacy Policy</a>
+      <a href="#" style="color:inherit;margin:0 .5rem">Terms</a>
+      <a href="#" style="color:inherit;margin:0 .5rem">Contact</a>
+    </div>
   </div>
 </footer>
 
 <!-- ✦✦✦ MAIN SCRIPT ✦✦✦ -->
 <script>
-const $ = q => document.querySelector(q);
-const $$ = q => document.querySelectorAll(q);
+// DOM Elements
+const fileInput = document.getElementById('fileInput');
+const uploadArea = document.getElementById('uploadArea');
+const qualityRange = document.getElementById('qualityRange');
+const qualityVal = document.getElementById('qualityVal');
+const formatBtns = document.querySelectorAll('#formatBtns button');
+const convertBtn = document.getElementById('convertBtn');
+const spinner = document.getElementById('spinner');
+const results = document.getElementById('results');
+const origImg = document.getElementById('origImg');
+const convImg = document.getElementById('convImg');
+const origFmt = document.getElementById('origFmt');
+const origSize = document.getElementById('origSize');
+const origDim = document.getElementById('origDim');
+const convFmt = document.getElementById('convFmt');
+const convSize = document.getElementById('convSize');
+const convDim = document.getElementById('convDim');
+const savePct = document.getElementById('savePct');
+const downloadBtn = document.getElementById('downloadBtn');
+const resetBtn = document.getElementById('resetBtn');
 
-const fileInput = $("#fileInput"),
-      uploadArea = $("#uploadArea"),
-      qualityRange = $("#qualityRange"),
-      qualityVal = $("#qualityVal"),
-      formatBtns = $$("#formatBtns button"),
-      convertBtn = $("#convertBtn"),
-      spinner = $("#spinner"),
-      results = $("#results"),
-      origImg = $("#origImg"),
-      convImg = $("#convImg"),
-      origFmt = $("#origFmt"),
-      origSize = $("#origSize"),
-      origDim = $("#origDim"),
-      convFmt = $("#convFmt"),
-      convSize = $("#convSize"),
-      convDim = $("#convDim"),
-      savePct = $("#savePct"),
-      downloadBtn = $("#downloadBtn"),
-      resetBtn = $("#resetBtn");
+// Variables
+let originalFile, targetFormat = 'webp';
 
-let origBlob, targetFmt="webp";
-
-uploadArea.addEventListener("click",()=>fileInput.click());
-uploadArea.addEventListener("dragover",e=>{e.preventDefault();uploadArea.style.background="rgba(67,97,238,.07)";});
-uploadArea.addEventListener("dragleave",()=>uploadArea.style.background="");
-uploadArea.addEventListener("drop",e=>{
-  e.preventDefault();uploadArea.style.background="";
-  if(e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+// Event Listeners
+uploadArea.addEventListener('click', () => fileInput.click());
+uploadArea.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  uploadArea.style.background = 'rgba(67,97,238,.07)';
+});
+uploadArea.addEventListener('dragleave', () => {
+  uploadArea.style.background = '';
+});
+uploadArea.addEventListener('drop', (e) => {
+  e.preventDefault();
+  uploadArea.style.background = '';
+  if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
 });
 
-fileInput.addEventListener("change",()=>fileInput.files[0] && handleFile(fileInput.files[0]));
+fileInput.addEventListener('change', () => {
+  if (fileInput.files[0]) handleFile(fileInput.files[0]);
+});
 
-function handleFile(file){
-  if(!file.type.startsWith("image/")) return alert("Please choose an image file.");
-  if(file.size>10*1024*1024) return alert("Max file size is 10 MB.");
-  origBlob=file;
-  convertBtn.disabled=false;
-  uploadArea.querySelector("h3").textContent=file.name;
-}
+qualityRange.addEventListener('input', () => {
+  qualityVal.textContent = qualityRange.value + '%';
+});
 
-qualityRange.addEventListener("input",()=>qualityVal.textContent=qualityRange.value+"%");
-
-formatBtns.forEach(btn=>{
-  btn.addEventListener("click",()=>{
-    formatBtns.forEach(b=>b.classList.remove("active"));
-    btn.classList.add("active");
-    targetFmt=btn.dataset.format;
+formatBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    formatBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    targetFormat = btn.dataset.format;
   });
 });
 
-convertBtn.addEventListener("click",async()=>{
-  spinner.style.display="block";convertBtn.disabled=true;
-  const qual=parseInt(qualityRange.value,10);
-  const url=URL.createObjectURL(origBlob);
-  const img=new Image();img.src=url;await img.decode();
-  const canvas=document.createElement("canvas");
-  canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
-  canvas.getContext("2d").drawImage(img,0,0);
-  let mime={jpeg:"image/jpeg",png:"image/png",webp:"image/webp"}[targetFmt];
-  const blob=await new Promise(r=>canvas.toBlob(r,mime,targetFmt==="png"?1:qual/100));
-  showResults(img,blob);
-  URL.revokeObjectURL(url);
+convertBtn.addEventListener('click', async () => {
+  if (!originalFile) return;
+  
+  spinner.style.display = 'block';
+  convertBtn.disabled = true;
+  
+  try {
+    const quality = parseInt(qualityRange.value, 10) / 100;
+    const img = new Image();
+    img.src = URL.createObjectURL(originalFile);
+    await img.decode();
+    
+    const canvas = document.createElement('canvas');
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    canvas.getContext('2d').drawImage(img, 0, 0);
+    
+    let mimeType;
+    switch(targetFormat) {
+      case 'jpeg': mimeType = 'image/jpeg'; break;
+      case 'png': mimeType = 'image/png'; break;
+      case 'webp': mimeType = 'image/webp'; break;
+    }
+    
+    const blob = await new Promise(resolve => {
+      canvas.toBlob(resolve, mimeType, targetFormat === 'png' ? 1 : quality);
+    });
+    
+    showResults(img, blob);
+    URL.revokeObjectURL(img.src);
+  } catch (error) {
+    alert('Error processing image: ' + error.message);
+    console.error(error);
+  } finally {
+    spinner.style.display = 'none';
+  }
 });
 
-function showResults(img,blob){
-  spinner.style.display="none";results.style.display="block";
-  /* original */
-  origImg.src=URL.createObjectURL(origBlob);
-  origFmt.textContent=origBlob.type.split("/")[1].toUpperCase();
-  origSize.textContent=(origBlob.size/1024).toFixed(1)+" KB";
-  origDim.textContent=img.naturalWidth+" × "+img.naturalHeight;
-  /* converted */
-  convImg.src=URL.createObjectURL(blob);
-  convFmt.textContent=targetFmt.toUpperCase();
-  convSize.textContent=(blob.size/1024).toFixed(1)+" KB";
-  convDim.textContent=img.naturalWidth+" × "+img.naturalHeight;
-  const saving=100-(blob.size/origBlob.size*100);
-  savePct.textContent=saving.toFixed(1)+"%";
-  downloadBtn.href=convImg.src;
-  downloadBtn.download=`converted.${targetFmt}`;
+// Functions
+function handleFile(file) {
+  if (!file.type.startsWith('image/')) {
+    alert('Please select an image file (JPG, PNG, WebP).');
+    return;
+  }
+  
+  if (file.size > 10 * 1024 * 1024) {
+    alert('File size exceeds 10MB limit. Please choose a smaller file.');
+    return;
+  }
+  
+  originalFile = file;
+  convertBtn.disabled = false;
+  uploadArea.querySelector('h3').textContent = file.name;
 }
 
-resetBtn.addEventListener("click",()=>location.reload());
-(adsbygoogle=window.adsbygoogle||[]).push({});
-document.querySelectorAll(".ads ins").forEach(i=>{try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}});
-$("#yr").textContent=new Date().getFullYear();
+function showResults(img, convertedBlob) {
+  results.style.display = 'block';
+  
+  // Original image info
+  origImg.src = URL.createObjectURL(originalFile);
+  origFmt.textContent = originalFile.type.split('/')[1].toUpperCase();
+  origSize.textContent = formatFileSize(originalFile.size);
+  origDim.textContent = `${img.naturalWidth} × ${img.naturalHeight}`;
+  
+  // Converted image info
+  convImg.src = URL.createObjectURL(convertedBlob);
+  convFmt.textContent = targetFormat.toUpperCase();
+  convSize.textContent = formatFileSize(convertedBlob.size);
+  convDim.textContent = `${img.naturalWidth} × ${img.naturalHeight}`;
+  
+  // Calculate savings
+  const reduction = ((originalFile.size - convertedBlob.size) / originalFile.size * 100).toFixed(1);
+  savePct.textContent = `${reduction}%`;
+  
+  // Set up download
+  downloadBtn.href = convImg.src;
+  downloadBtn.download = `converted.${targetFormat}`;
+}
+
+function formatFileSize(bytes) {
+  if (bytes < 1024) return bytes + ' bytes';
+  else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+  else return (bytes / 1048576).toFixed(1) + ' MB';
+}
+
+resetBtn.addEventListener('click', () => {
+  location.reload();
+});
+
+// Initialize AdSense
+(adsbygoogle = window.adsbygoogle || []).push({});
+document.querySelectorAll('.ads ins').forEach(ins => {
+  try {
+    (adsbygoogle = window.bygoogle || []).push({});
+  } catch (e) {
+    console.error('AdSense error:', e);
+  }
+});
+
+// Set current year in footer
+document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
