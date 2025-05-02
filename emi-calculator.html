@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use our EMI and Systematic Withdrawal Plan (SWP) Calculator to plan your finances effectively. Responsive, mobile-friendly, and SEO-optimized.">
+  <meta name="keywords" content="EMI Calculator, SWP Calculator, Finance Tool, JavaScript Calculator">
+  <meta name="author" content="Your Name">
+  <title>EMI & SWP Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #00bcd4, #007bb2);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+    }
+    header {
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .calculator-container {
+      width: 90%;
+      max-width: 600px;
+      background: #fff;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .calculator-container:hover {
+      transform: scale(1.05);
+    }
+    h2 {
+      color: #007bb2;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: border 0.3s ease;
+    }
+    input:focus {
+      border-color: #007bb2;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #007bb2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #005f88;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .ads {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .ads p {
+      font-size: 0.9em;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .calculator-container {
+        margin: 10px 0;
+      }
+      h2 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EMI & SWP Calculator</h1>
+  </header>
+  
+  <div class="calculator-container">
+    <h2>EMI Calculator</h2>
+    <div class="form-group">
+      <label for="loanAmount">Loan Amount (₹):</label>
+      <input type="number" id="loanAmount" placeholder="Enter loan amount">
+    </div>
+    <div class="form-group">
+      <label for="interestRate">Annual Interest Rate (%):</label>
+      <input type="number" id="interestRate" placeholder="Enter interest rate">
+    </div>
+    <div class="form-group">
+      <label for="loanTenure">Loan Tenure (in years):</label>
+      <input type="number" id="loanTenure" placeholder="Enter loan tenure in years">
+    </div>
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <div class="result" id="emiResult"></div>
+  </div>
+
+  <div class="calculator-container">
+    <h2>SWP Calculator</h2>
+    <div class="form-group">
+      <label for="initialInvestment">Initial Investment (₹):</label>
+      <input type="number" id="initialInvestment" placeholder="Enter investment amount">
+    </div>
+    <div class="form-group">
+      <label for="swpAmount">SWP Amount per Month (₹):</label>
+      <input type="number" id="swpAmount" placeholder="Enter SWP amount">
+    </div>
+    <div class="form-group">
+      <label for="swpDuration">Duration (years):</label>
+      <input type="number" id="swpDuration" placeholder="Enter duration in years">
+    </div>
+    <div class="form-group">
+      <label for="swpInterestRate">Annual Interest Rate (%):</label>
+      <input type="number" id="swpInterestRate" placeholder="Enter interest rate">
+    </div>
+    <button onclick="calculateSWP()">Calculate SWP</button>
+    <div class="result" id="swpResult"></div>
+  </div>
+
+  <div class="ads">
+    <!-- Google AdSense placeholder; comment out for sandbox testing -->
+    <!--
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    -->
+    <p>Ad space reserved for production use.</p>
+  </div>
+
+  <script>
+    function calculateEMI() {
+      const principal = parseFloat(document.getElementById('loanAmount').value);
+      const annualRate = parseFloat(document.getElementById('interestRate').value);
+      const years = parseInt(document.getElementById('loanTenure').value);
+
+      if (!principal || !annualRate || !years || years <= 0) {
+        document.getElementById('emiResult').innerText = 'Please enter valid inputs.';
+        return;
+      }
+
+      const months = years * 12;  // Convert years to months
+      const monthlyRate = annualRate / 12 / 100;
+      const emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, months)) /
+                  (Math.pow(1 + monthlyRate, months) - 1);
+
+      document.getElementById('emiResult').innerText =
+        `Estimated EMI: ₹${emi.toFixed(2)}`;
+    }
+
+    function calculateSWP() {
+      const investment = parseFloat(document.getElementById('initialInvestment').value);
+      const swp = parseFloat(document.getElementById('swpAmount').value);
+      const years = parseInt(document.getElementById('swpDuration').value);
+      const annualInterest = parseFloat(document.getElementById('swpInterestRate').value);
+
+      if (!investment || !swp || !years || years <= 0 || isNaN(annualInterest)) {
+        document.getElementById('swpResult').innerText = 'Please enter valid inputs.';
+        return;
+      }
+
+      const durationInMonths = years * 12;  // Convert years to months
+      let remaining = investment - (swp * durationInMonths);
+      remaining = remaining < 0 ? 0 : remaining;
+
+      const interestEarned = investment * (annualInterest / 100) * years;
+
+      document.getElementById('swpResult').innerText =
+        `Remaining Investment after ${years} years: ₹${remaining.toFixed(2)}\n` +
+        `Estimated Interest Earned over ${years} years: ₹${interestEarned.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
